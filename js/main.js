@@ -17,8 +17,11 @@ burger.onclick=()=>{const o=nav.classList.toggle("open");burger.setAttribute("ar
 nav.onclick=e=>{if(e.target.tagName==="A")nav.classList.remove("open")};
 addEventListener("scroll",()=>$("#site-header").classList.toggle("solid",scrollY>20),{passive:true});
 /* render helpers */
-$$("[data-services-home]").forEach(el=>{el.innerHTML=SERVICES.map((s,i)=>`<a class="svc ${i===0?"lead":""}" href="/services#${s.slug}">${img("/"+s.img,s.title+" service banner")}<div><span class="num">0${i+1}</span><h3>${s.title}</h3><p>${s.short}</p><span class="more">Learn more →</span></div></a>`).join("")});
+$$("[data-services-home]").forEach(el=>{el.innerHTML=SERVICES.map((s,i)=>`<a class="svc" href="/services#${s.slug}">${img("/"+s.img,s.title+" service banner")}<div class="svc-b"><span class="num">0${i+1}</span><h3>${s.title}</h3><p>${s.short}</p><span class="more">Learn more →</span></div></a>`).join("")});
 $$("[data-services-full]").forEach(el=>{el.innerHTML=SERVICES.map((s,i)=>`<section class="svc-full ${i%2?"flip":""} reveal" id="${s.slug}"><div class="wrap two">${img("/"+s.img,s.title+" service banner","wide")}<div><span class="num">0${i+1}</span><h2>${s.title}</h2><p class="lead-p">${s.long}</p><h4>Key capabilities</h4><ul class="ticks">${s.caps.map(c=>`<li>${c}</li>`).join("")}</ul><h4>Business benefit</h4><p>${s.benefits}</p><a class="btn" href="/contact?service=${encodeURIComponent(s.title)}">Start Your Project</a></div></div></section>`).join("")});
+const hg=$("[data-portfolio-home]");
+if(hg){const ORD=["Website Design","E-commerce","Search Engine Optimization","CRM & Automation","Social Media Marketing"];
+ hg.innerHTML=ORD.map(c=>{const a=PORTFOLIO.filter(p=>p.cat===c&&p.home).slice(0,2);return a.length?`<div class="hp-row"><div class="hp-h"><h3>${c}</h3><a class="more" href="/portfolio">View all →</a></div>${a.map(p=>`<figure class="pf-h">${img("/assets/portfolio/"+p.file,p.alt)}</figure>`).join("")}</div>`:""}).join("")}
 const grid=$("[data-portfolio]");
 if(grid){const n=+grid.dataset.portfolio||PORTFOLIO.length;const cats=[...new Set(PORTFOLIO.map(p=>p.cat).filter(Boolean))];
  const f=$("[data-filters]");if(f&&cats.length)f.innerHTML=["All",...cats].map((c,i)=>`<button class="chip ${i?"":"on"}" data-c="${c}">${c}</button>`).join("");

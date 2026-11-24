@@ -33,11 +33,11 @@ window.SERVICES = [
 ];
 /* One line per portfolio image in assets/portfolio. "cat" drives the filter buttons. Order = display order (first 6 appear on the homepage). */
 window.PORTFOLIO = [
-  { file:"ecommerce-1.webp", w:682, h:1340, cat:"E-commerce", alt:"E-commerce project 1 by VANTIX DIGITAL" },
-  { file:"web-4.webp", w:736, h:1812, cat:"Website Design", alt:"Website Design project 4 by VANTIX DIGITAL" },
-  { file:"ecommerce-5.webp", w:736, h:1308, cat:"E-commerce", alt:"E-commerce project 5 by VANTIX DIGITAL" },
-  { file:"seo-1.webp", w:736, h:736, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 1 by VANTIX DIGITAL" },
-  { file:"web-2.webp", w:736, h:1334, cat:"Website Design", alt:"Website Design project 2 by VANTIX DIGITAL" },
+  { file:"ecommerce-1.webp", home:1, w:682, h:1340, cat:"E-commerce", alt:"E-commerce project 1 by VANTIX DIGITAL" },
+  { file:"web-4.webp", home:1, w:736, h:1812, cat:"Website Design", alt:"Website Design project 4 by VANTIX DIGITAL" },
+  { file:"ecommerce-5.webp", home:1, w:736, h:1308, cat:"E-commerce", alt:"E-commerce project 5 by VANTIX DIGITAL" },
+  { file:"seo-1.webp", home:1, w:736, h:736, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 1 by VANTIX DIGITAL" },
+  { file:"web-2.webp", home:1, w:736, h:1334, cat:"Website Design", alt:"Website Design project 2 by VANTIX DIGITAL" },
   { file:"ecommerce-3.webp", w:736, h:1482, cat:"E-commerce", alt:"E-commerce project 3 by VANTIX DIGITAL" },
   { file:"web.webp", w:375, h:750, cat:"Website Design", alt:"Website Design project by VANTIX DIGITAL" },
   { file:"web-1.webp", w:735, h:490, cat:"Website Design", alt:"Website Design project 1 by VANTIX DIGITAL" },
@@ -51,12 +51,12 @@ window.PORTFOLIO = [
   { file:"seo-3.webp", w:736, h:736, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 3 by VANTIX DIGITAL" },
   { file:"seo-4.webp", w:735, h:555, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 4 by VANTIX DIGITAL" },
   { file:"seo-5.webp", w:736, h:482, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 5 by VANTIX DIGITAL" },
-  { file:"seo-6.webp", w:736, h:736, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 6 by VANTIX DIGITAL" },
-  { file:"crm-1.webp", w:1400, h:678, cat:"CRM & Automation", alt:"CRM & Automation project 1 by VANTIX DIGITAL" },
+  { file:"seo-6.webp", home:1, w:736, h:736, cat:"Search Engine Optimization", alt:"Search Engine Optimization project 6 by VANTIX DIGITAL" },
+  { file:"crm-1.webp", home:1, w:1400, h:678, cat:"CRM & Automation", alt:"CRM & Automation project 1 by VANTIX DIGITAL" },
   { file:"crm-2.webp", w:1400, h:678, cat:"CRM & Automation", alt:"CRM & Automation project 2 by VANTIX DIGITAL" },
-  { file:"crm-3.webp", w:1400, h:678, cat:"CRM & Automation", alt:"CRM & Automation project 3 by VANTIX DIGITAL" },
-  { file:"social-media-marketing-1.webp", w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 1 by VANTIX DIGITAL" },
+  { file:"crm-3.webp", home:1, w:1400, h:678, cat:"CRM & Automation", alt:"CRM & Automation project 3 by VANTIX DIGITAL" },
+  { file:"social-media-marketing-1.webp", home:1, w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 1 by VANTIX DIGITAL" },
   { file:"social-media-marketing-2.webp", w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 2 by VANTIX DIGITAL" },
   { file:"social-media-marketing-3.webp", w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 3 by VANTIX DIGITAL" },
-  { file:"social-media-marketing-4.webp", w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 4 by VANTIX DIGITAL" }
+  { file:"social-media-marketing-4.webp", home:1, w:1400, h:715, cat:"Social Media Marketing", alt:"Social Media Marketing project 4 by VANTIX DIGITAL" }
 ];
